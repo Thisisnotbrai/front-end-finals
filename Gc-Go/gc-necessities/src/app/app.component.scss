@@ -1,0 +1,116 @@
+/* Main layout container */
+.main {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    gap: 20px; /* Space between map and store list */
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  /* Map container */
+  .map-container {
+    flex: 1; /* Map takes up one part */
+    height: 100%;
+  }
+  
+  /* Right content section */
+  .content {
+    flex: 1.5; /* Content takes up more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  /* Title and description */
+  .details {
+    margin-bottom: 20px;
+  }
+  
+  .details h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .details p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Store list grid */
+  .store-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px; /* Space before buttons */
+  }
+  
+  /* Store card styling */
+  .store-card {
+    background-color: white;
+    border: 2px solid #6a5acd; /* Purple border like in the example */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .store-card h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .store-card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .store-card .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .store-card .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Buttons section */
+  .additional-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .additional-buttons .btn {
+    background-color: #4CAF50;
+    padding: 10px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .additional-buttons .btn:hover {
+    background-color: #45a049;
+  }
+  
